@@ -120,6 +120,63 @@
 }
 
 /****************************************************************************/
+/* Store Info */
+.store-info {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.store-info-item {
+  background-color: var(--lightGreen-1);
+  padding: 2rem 3rem;
+  text-align: center;
+  border-radius: var(--medium);
+  width: 15rem;
+}
+.store-info-item img {
+  width: 3rem;
+  height: 3rem;
+  margin: 0 auto;
+  margin-bottom: 1.5rem;
+}
+.store-info-title {
+  font-size: 1.4rem;
+  font-family: "Poppins";
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  color: var(--black-1);
+}
+.store-info-text {
+  font-size: 1.4rem;
+  font-family: "Raleway";
+  color: var(--black-2);
+}
+
+@media only screen and (min-width: 768px) {
+  .store-info {
+    gap: 2rem;
+  }
+  .store-info-item {
+    min-width: 20rem;
+    padding: 4rem 0;
+  }
+  .store-info-item img {
+    width: 4.7rem;
+    margin-bottom: 2.5rem;
+  }
+  .store-info-title {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+  }
+  .store-info-text {
+    font-size: 1.6rem;
+  }
+}
+
+/****************************************************************************/
 /* Footer */
 footer {
   background-color: var(--lightGreen-1);
