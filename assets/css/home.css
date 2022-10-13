@@ -60,3 +60,122 @@
     text-align: left;
   }
 }
+
+/****************************************************************************/
+/* Our Specials */
+#our-specials {
+  padding-top: 10rem;
+}
+.our-specials {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.our-specials-left {
+  display: flex;
+  gap: 1rem;
+}
+.our-specials-item {
+  background-color: var(--lightGreen-1);
+  padding: 1.2rem;
+  padding-top: 5rem;
+  border-radius: var(--medium);
+  margin: 0 auto;
+}
+.our-specials-item-img {
+  margin-top: calc(-50% - 2rem);
+  height: 10rem;
+  margin-bottom: 2rem;
+  border-radius: var(--medium);
+  height: 15rem;
+  overflow: hidden;
+}
+.our-specials-item-img img {
+  object-fit: cover;
+}
+.our-specials-item-title {
+  font-size: 1.4rem;
+  color: var(--black-1);
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.our-specials-item-price {
+  color: var(--green-1);
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.our-specials-item-rating {
+  height: 1.5rem;
+  width: max-content;
+  margin-bottom: 1rem;
+}
+.our-specials-item-desc {
+  font-size: 1.4rem;
+  color: var(--black-2);
+  font-weight: 500;
+}
+.our-specials-title {
+  font-size: 1.8rem;
+  color: var(--black-1);
+  margin-bottom: 1.5rem;
+}
+.our-specials-text {
+  font-size: 1.4rem;
+  color: var(--black-2);
+  margin-bottom: 1rem;
+}
+
+@media only screen and (min-width: 768px) {
+  #our-specials {
+    padding-top: 15rem;
+  }
+  .our-specials {
+    max-width: 90rem;
+    flex-direction: row;
+  }
+  .our-specials-left {
+    flex: 4;
+    gap: 2rem;
+  }
+  .our-specials-item {
+    padding: 2rem;
+    width: 45%;
+  }
+  .our-specials-item-img img {
+    background-color: red;
+    width: 100%;
+  }
+  .our-specials-item-title {
+    font-size: 2.4rem;
+    line-height: 1.4;
+    margin-bottom: 1.5rem;
+  }
+  .our-specials-item-price {
+    font-size: 1.8rem;
+  }
+  .our-specials-item-rating {
+    margin-bottom: 2rem;
+  }
+  .our-specials-item-desc {
+    font-size: 1.8rem;
+  }
+  .our-specials-right {
+    flex: 2;
+  }
+  .our-specials-title {
+    font-size: 3.6rem;
+    margin-bottom: 1.5em;
+  }
+  .our-specials-desc {
+    font-size: 1.6rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  .our-specials-left {
+    flex-wrap: wrap;
+    gap: 10rem;
+  }
+}
