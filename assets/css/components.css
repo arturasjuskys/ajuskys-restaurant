@@ -1,4 +1,36 @@
+/* Global Button */
+
+.btn {
+  color: var(--green-1);
+  font-family: "Poppins";
+  font-weight: 500;
+  border-radius: var(--medium);
+  font-size: 1.4rem;
+  padding: 1.2rem 2rem;
+}
+.primary-btn {
+  color: var(--white-1);
+  background-color: var(--green-1);
+}
+@media only screen and (min-width: 768px) {
+  .btn {
+    padding: 1.3rem 2rem;
+    font-size: 2rem;
+  }
+}
+
+/* Global Logo */
+.logo {
+  text-decoration: none;
+  font-size: 3rem;
+  color: var(--black-1);
+  font-family: "Poppins";
+  margin: auto 0;
+}
+
+/****************************************************************************/
 /* Nav */
+
 .nav {
   padding: 2rem 0;
 }
@@ -10,13 +42,6 @@
 .nav-wrapper {
   display: flex;
   justify-content: space-between;
-}
-.logo {
-  text-decoration: none;
-  font-size: 2rem;
-  color: inherit;
-  font-family: "Poppins";
-  margin: auto 0;
 }
 .nav-list li {
   display: inline-block;
@@ -94,22 +119,94 @@
   }
 }
 
-/* Global Button */
-.btn {
-  color: var(--green-1);
-  font-family: "Poppins";
-  font-weight: 500;
-  border-radius: var(--medium);
+/****************************************************************************/
+/* Footer */
+footer {
+  background-color: var(--lightGreen-1);
+  padding-top: 5rem;
+  padding-bottom: 2rem;
+}
+.footer-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.footer.logo {
+  margin-bottom: 2rem;
+}
+.footer-desc {
   font-size: 1.4rem;
-  padding: 1.2rem 2rem;
+  color: var(--black-2);
+  margin-bottom: 2rem;
 }
-.primary-btn {
-  color: var(--white-1);
-  background-color: var(--green-1);
+.footer-social-title,
+.footer-title {
+  font-size: 1.8rem;
+  color: var(--black-1);
+  margin-bottom: 1rem;
 }
+.footer-social li {
+  display: inline-block;
+  margin-right: 0.5rem;
+}
+.footer-social a {
+  padding: 0.5rem 0.8rem;
+  background-color: var(--white-1);
+  border: 1px solid var(--green-2);
+  border-radius: var(--medium);
+}
+.footer-social svg {
+  width: 2rem;
+  color: var(--black-2);
+}
+.footer-links a {
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+  color: var(--black-2);
+  font-family: "Raleway";
+  font-weight: 500;
+  line-height: 1.4;
+}
+#copyright {
+  padding: 1rem 0;
+}
+.copyright-text {
+  font-size: 1.4rem;
+  text-align: center;
+}
+
 @media only screen and (min-width: 768px) {
-  .btn {
-    padding: 1.3rem 2rem;
+  footer {
+    padding-top: 8rem;
+    padding-bottom: 4rem;
+  }
+  .footer-wrapper {
+    flex-direction: row;
+  }
+  .footer-one {
+    flex: 4;
+  }
+  .footer-two,
+  .footer-three,
+  .footer-four {
+    flex: 2;
+  }
+  .footer-desc {
+    max-width: 30rem;
+    font-size: 1.8rem;
+    margin-bottom: 2.5rem;
+  }
+  .footer-social-title,
+  .footer-links {
     font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  .footer-links a {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+  .copyright-text {
+    font-size: 1.6rem;
+    text-align: left;
   }
 }
