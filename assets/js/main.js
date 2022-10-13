@@ -25,3 +25,17 @@ navIconEl.addEventListener("click", navOpen);
 navCloseEl.addEventListener("click", navClose);
 // allows to close mobile menu when clicking outside of menu
 navOverlayEl.addEventListener("click", navClose);
+
+// AOS Animations
+// add data-aos attribute to .html elements
+AOS.init({
+  offset: 200,
+  delay: 100,
+  duration: 400,
+  easing: "ease",
+  once: false,
+  mirror: false,
+  // top => elements top thats scrolls into view
+  // bottom => windows bottom
+  anchorPlacement: "top-button",
+});
