@@ -179,3 +179,113 @@
     gap: 10rem;
   }
 }
+
+/****************************************************************************/
+/* Discount Dishes */
+.discount-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  border-radius: var(--medium);
+  background: var(--lightGreen-1) url(../images/discount-illustration.png)
+    no-repeat bottom right / 10rem;
+}
+.discount-images {
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+.discount-img-1 {
+  flex: 2;
+}
+.discount-img-2 {
+  flex: 3;
+}
+.discount-images img {
+  object-fit: cover;
+  border-radius: var(--small);
+  height: 100%;
+}
+.discount-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.discount-title-p {
+  font-size: 1.4rem;
+  font-weight: 900;
+  color: var(--green-1);
+  margin-bottom: 0.5rem;
+}
+.discount-title {
+  font-size: 1.8rem;
+  color: var(--black-1);
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.discount-price {
+  font-size: 1.4rem;
+  font-weight: 600;
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+.discount-price-old {
+  color: var(--black-2);
+  text-decoration: line-through;
+}
+.discount-price-new {
+  color: var(--green-1);
+}
+.discount-rating {
+  height: 1.5rem;
+  width: max-content;
+  margin-bottom: 1rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .discount-wrapper {
+    flex-direction: row;
+    gap: 4rem;
+    padding: 2rem;
+    align-items: center;
+    background-size: 15rem;
+    margin: 0 auto;
+  }
+  .discount-images {
+    flex: 5;
+    margin-bottom: 0;
+  }
+  .discount-img-1,
+  .discount-img-2,
+  .discount-img-3 {
+    flex: 1;
+    height: 35rem;
+  }
+  .discount-info {
+    flex: 3;
+  }
+  .discount-title-p {
+    font-size: 2.4rem;
+  }
+  .discount-title {
+    font-size: 3.6rem;
+    margin-bottom: 1.5rem;
+  }
+  .discount-price {
+    font-size: 2.4rem;
+  }
+  .discount-rating {
+    margin-bottom: 2rem;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .discount-wrapper {
+    gap: 2rem;
+  }
+  .discount-img-3 {
+    display: none;
+  }
+}
