@@ -469,3 +469,85 @@
     font-size: 1.8rem;
   }
 }
+
+/****************************************************************************/
+/* Testimonials */
+.testimonials-wrapper {
+  max-width: 40rem;
+  margin: 0 auto;
+}
+.testimonials-title {
+  font-size: 1.8rem;
+  margin-bottom: 3rem;
+  text-align: center;
+  color: var(--black-1);
+}
+.testimonials-items {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+.testimonial-item {
+  display: flex;
+  padding: 1rem;
+  gap: 1rem;
+  background-color: var(--lightGreen-1);
+  border-radius: var(--small);
+}
+.testimonial-item-info {
+  flex: 4;
+}
+.testimonial-item img {
+  flex: 2;
+  border-radius: var(--small);
+}
+.testimonial-item-name {
+  font-size: 1.4rem;
+  font-family: "Poppins";
+  margin-bottom: 1rem;
+  color: var(--black-1);
+}
+.testimonial-item-info img {
+  max-height: 1.5rem;
+  width: max-content;
+  margin-bottom: 1.5rem;
+}
+.testimonial-item-text {
+  font-size: 1.4rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .testimonials-wrapper {
+    max-width: 90rem;
+  }
+  .testimonials-title {
+    font-size: 3.6rem;
+    margin-bottom: 5rem;
+  }
+  .testimonials-items {
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+  }
+  .testimonial-item {
+    padding: 1.5rem;
+  }
+  .testimonial-item-name {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+  }
+  .testimonial-item-info img {
+    margin-bottom: 2rem;
+  }
+  .testimonial-item-text {
+    font-size: 1.6rem;
+  }
+}
+@media only screen and (max-width: 350px) {
+  .testimonial-item {
+    flex-direction: column;
+  }
+  .testimonial-item img,
+  .testimonial-item-info {
+    flex: 1;
+  }
+}
