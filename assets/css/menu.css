@@ -42,12 +42,19 @@
   padding: 1.5rem;
   border-radius: var(--medium);
 }
-.our-special-item img,
+.our-special-item-img-wrapper,
 .our-special-item-info {
   flex: 1;
 }
-.our-special-item img {
+.our-special-item-img-wrapper {
   border-radius: var(--small);
+}
+.our-special-item-img-wrapper {
+  overflow: hidden;
+}
+.our-special-item-img-wrapper img {
+  object-fit: cover;
+  height: 100%;
 }
 .our-special-item-title {
   font-size: 1.8rem;
@@ -84,10 +91,10 @@
 }
 
 @media only screen and (min-width: 1100px) {
-  .our-special-item img {
+  .our-special-item-img-wrapper {
     flex: 4;
   }
-  .our-special-item img {
+  .our-special-item-info {
     flex: 3;
   }
 }
