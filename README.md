@@ -18,3 +18,6 @@ Whole website consists of five pages: Home, Menu, About, Contact, and Booking. C
 - Fonts: [Raleway](https://fonts.google.com/specimen/Raleway?query=raleway)
 - Icons: [feathericons.com](https://feathericons.com/)
   <!-- - github page => menu.svg -->
+
+![](./assets/Screenshoots/Restaurant%20Full.jpg)
+![](./assets/Screenshoots/Restaurant%20Contact.jpg)
